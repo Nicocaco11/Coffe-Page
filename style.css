@@ -2,7 +2,7 @@
 * {
   align-items: center;
   justify-content: center;
-  font-family: "Rubik", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   color: white;
   max-width: 100%;
   margin: 0;
@@ -37,7 +37,7 @@ nav .nav__logo {
 }
 nav .nav__link {
   width: 50%;
-  font-size: 140%;
+  font-size: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -48,55 +48,77 @@ nav .nav__button {
   gap: 20%;
 }
 nav .nav__button--login {
+  font-size: 1.5rem;
   background-color: rgb(113, 36, 36);
   width: 10vw;
   height: 10vh;
 }
+nav .nav__button--register {
+  font-size: 1.5rem;
+}
 
 .hero {
   width: 100%;
-  height: 100%;
-  margin-top: -93%;
+  margin-top: -95%;
+  display: flex;
 }
-.hero .hero__info {
+
+.hero__info {
+  width: 50%;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 }
-.hero .hero__h1 {
-  width: 50%;
-  font-size: 500%;
+
+.hero__info--row {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
 }
-.hero .hero__img {
-  width: 30vw;
+
+.hero__h1 {
+  font-size: 520%;
+  display: flex;
 }
-.hero .hero__info p {
-  width: 50%;
+
+.hero__content {
   font-size: 200%;
-  gap: 2.5rem;
-}
-.hero .hero__info--row {
   display: flex;
 }
-.hero .hero__button {
-  width: 65vw;
-  height: 5vh;
-  font-size: 150%;
+
+.hero__img {
+  width: 30%;
+}
+
+.hero__button {
+  width: 25%;
   color: orange;
-  display: flex;
-  margin-top: -5rem;
-  margin-right: 20rem;
+  font-size: 2rem;
 }
-.hero .hero__button--menu {
-  width: 50vw;
+
+.hero__button--products {
   border: solid orange;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  padding: 10px 0px 5px 65px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
-.hero .hero__button--about {
-  width: 80vw;
+
+.products {
+  width: 100%;
+  margin-top: 30vh;
+}
+
+.products__img {
+  box-shadow: 5px -2px 68px 0px rgb(0, 0, 0);
+  -webkit-box-shadow: 5px -2px 68px 0px rgb(0, 0, 0);
+  -moz-box-shadow: 5px -2px 68px 0px rgb(0, 0, 0);
+  -ms-box-shadow: 5px -2px 68px 0px rgb(0, 0, 0);
+  -o-box-shadow: 5px -2px 68px 0px rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
