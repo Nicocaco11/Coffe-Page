@@ -1,9 +1,33 @@
 @charset "UTF-8";
+@keyframes buttonhover {
+  from {
+    opacity: 50%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.navbar__link:hover {
+  animation-name: buttonhover;
+  animation-duration: 1s;
+  color: orange;
+  text-decoration: underline;
+}
+
+:root {
+  --primary-color: white;
+  --color-bg-a-login: rgb(113, 36, 36);
+  --color-button-hover: orange;
+}
+
+body {
+  background-image: url(src/bg.png);
+}
+
 * {
   align-items: center;
   justify-content: center;
-  font-family: "Bebas Neue", sans-serif;
-  color: white;
+  color: var(--primary-color);
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -11,184 +35,36 @@
   /* Depurar código*/
 }
 
-.background {
-  width: 100%;
-  height: 100vw;
+h1 {
+  font-family: "Exo 2", sans-serif;
 }
 
-nav {
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%;
+h2 {
+  font-family: "PT Serif", serif;
+}
+
+p {
+  font-family: "Lora", serif;
+}
+
+.navbar {
+  max-width: 100%;
   height: 10vh;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: fixed;
+  margin: auto;
   overflow: hidden;
   top: 0;
 }
-nav .nav__logo {
-  width: 25%;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  margin-left: 2%;
-  margin-bottom: 0.5vh;
+.navbar .navbar__logo {
+  width: 6vw;
+  margin: auto;
 }
-nav .nav__link {
-  width: 50%;
+.navbar #navbar__link {
   font-size: 2rem;
+  margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
-nav .nav__button {
-  display: flex;
-  flex-direction: row;
-  gap: 20%;
-}
-nav .nav__button--login {
-  font-size: 1.5rem;
-  background-color: rgb(113, 36, 36);
-  width: 10vw;
-  height: 10vh;
-}
-nav .nav__button--register {
-  font-size: 1.5rem;
-}
-
-.hero {
-  width: 100%;
-  margin-top: -95%;
-  display: flex;
-}
-
-.hero__info {
-  width: 50%;
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.hero__info--row {
-  width: 100%;
-  height: 15vh;
-  display: flex;
-  flex-direction: row;
-  gap: 8rem;
-}
-
-.hero__h1 {
-  font-size: 530%;
-  display: flex;
-  color: rgb(228, 161, 80);
-}
-
-.hero__content {
-  font-size: 200%;
-  display: flex;
-}
-
-.hero__img {
-  width: 30%;
-}
-
-.hero__button {
-  width: 25%;
-  color: orange;
-  font-size: 2rem;
-}
-
-.hero__button--products {
-  border: solid orange;
-  padding: 10px 0px 5px 8%;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-
-.products {
-  width: 100%;
-  margin-top: -30vw;
-  display: flex;
-  flex-direction: wrap;
-  gap: 5rem;
-}
-
-.products__block {
-  margin-top: 50vw;
-  background-color: white;
-  width: 20vw;
-  height: 55vh;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 1px 4px 38px 18px rgba(0, 0, 0, 0.9);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.products__text {
-  color: black;
-  font-size: 2rem;
-}
-
-.products__price {
-  color: white;
-  background-color: rgb(234, 181, 117);
-  padding: 2px 20px 2px 20px;
-  font-size: 1.8rem;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.products__button {
-  color: black;
-  border: solid rgb(228, 161, 80);
-  padding: 2px 10px 2px 10px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.products__block--row {
-  gap: 2rem;
-  display: flex;
-  flex-direction: row;
-  margin-top: 1.2rem;
-}
-
-.products__img {
-  padding: 0.5rem;
-  background-color: rgba(187, 187, 187, 0.5);
-  width: 12.5vw;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.products__arrow {
-  margin-top: 50%;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
-  -ms-border-radius: 80px;
-  -o-border-radius: 80px;
+  gap: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */

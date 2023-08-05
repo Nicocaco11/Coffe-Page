@@ -1,0 +1,16 @@
+@keyframes buttonhover {
+    from{
+        opacity: 50%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+.navbar__link:hover{
+    animation-name: buttonhover;
+    animation-duration: 1s;
+    color: orange;
+    text-decoration: underline;
+}
