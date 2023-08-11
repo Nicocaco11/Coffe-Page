@@ -11,6 +11,20 @@
 .navbar__link:hover{
     animation-name: buttonhover;
     animation-duration: 1s;
-    color: orange;
+    color: var(--button-color);
     text-decoration: underline;
+}
+
+.hero__button:hover{
+    animation: buttonhover;
+    -webkit-animation: buttonhover;
+    animation-duration: 0.5s;
+    text-decoration: underline;
+}
+
+.hero__button--products:hover{
+    animation-name: buttonhover;
+    animation-duration: 0.5s;
+    color: var(--primary-color);
+    background-color: var(--button-color);
 }

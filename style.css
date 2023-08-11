@@ -10,14 +10,28 @@
 .navbar__link:hover {
   animation-name: buttonhover;
   animation-duration: 1s;
-  color: orange;
+  color: var(--button-color);
   text-decoration: underline;
+}
+
+.hero__button:hover {
+  animation: buttonhover;
+  -webkit-animation: buttonhover;
+  animation-duration: 0.5s;
+  text-decoration: underline;
+}
+
+.hero__button--products:hover {
+  animation-name: buttonhover;
+  animation-duration: 0.5s;
+  color: var(--primary-color);
+  background-color: var(--button-color);
 }
 
 :root {
   --primary-color: white;
-  --color-bg-a-login: rgb(113, 36, 36);
-  --color-button-hover: orange;
+  --button-color: orange;
+  --color-h1: rgb(255, 197, 90);
 }
 
 body {
@@ -57,7 +71,7 @@ p {
   top: 0;
 }
 .navbar .navbar__logo {
-  width: 6vw;
+  width: 5.5vw;
   margin: auto;
 }
 .navbar #navbar__link {
@@ -65,6 +79,56 @@ p {
   margin: auto;
   display: flex;
   gap: 30%;
+}
+
+#hero {
+  width: 80vw;
+  padding-top: 5rem;
+  margin: auto;
+  display: flex;
+}
+
+.hero__content {
+  width: 40vw;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.hero__content h1 {
+  color: var(--color-h1);
+  font-size: 3rem;
+}
+
+.hero__content p {
+  font-size: 1.5rem;
+}
+
+#hero__button {
+  display: flex;
+  gap: 5rem;
+  justify-content: start;
+  width: 50vw;
+}
+
+.hero__button {
+  display: flex;
+  color: var(--button-color);
+  font-size: 2rem;
+}
+
+.hero__button--products {
+  padding: 10px 50px;
+  border: solid var(--button-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.hero__img {
+  width: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */
