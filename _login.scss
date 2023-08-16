@@ -1,0 +1,29 @@
+*{
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+    /* Depurar código*/
+    //border: solid red;
+}
+
+#login{
+    width: 30vw;
+    height: 50vh;
+    margin-inline: 35vw;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(black, 0.5);
+    border: solid var(--primary-color);
+    color: black;
+}
+
+#enviar{
+    font-size: 1rem;
+}

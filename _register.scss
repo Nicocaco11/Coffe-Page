@@ -1,0 +1,16 @@
+#register{
+    width: 30vw;
+    height: 50vh;
+    margin-inline: 35vw;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(black, 0.5);
+    border: solid var(--primary-color);
+
+    input{
+        color: black;
+    }
+}
+
