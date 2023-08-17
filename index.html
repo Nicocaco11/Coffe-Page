@@ -14,18 +14,25 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav id="navbar">
         <img src="src/logo.png" alt="coffe-logo" class="navbar__logo">
-        <div id="navbar__link">
-        <a href="#" class="navbar__link">Inicio</a>
-        <a href="#" class="navbar__link">Productos</a>
-        <a href="#" class="navbar__link">Nósotros</a>
-        </div>
 
-        <div id="navbar__link">
-        <a href="login.html" class="navbar__link">Ingresar</a>
-        <a href="register.html" class="navbar__link">Registrarse</a>
-        </div>
+        <input type="checkbox" id="navbar__checkbox">
+        <label for="navbar__checkbox" class="navbar_checked">
+            <i class='bx bx-menu bx-lg'></i>
+        </label>
+
+        <ul class="navbar__link">
+        <li class="navbar__link"><a href="#">Inicio</a></li>
+        <li class="navbar__link"><a href="#products">Productos</a></li>
+        <li class="navbar__link"><a href="#about">Nósotros</a></li>
+        </ul>
+        
+        <ul class="navbar__link">
+        <li class="navbar__link"><a href="login.html">Ingresar</a></li>
+        <li class="navbar__link"><a href="register.html">Registrarse</a></li>
+        </ul>
+
     </nav>
 
     <section id="hero">
@@ -80,7 +87,7 @@
                 <p>
                     Nuestra historia comenzó con una pasión compartida por el café de calidad y el deseo de brindar una experiencia inolvidable a cada persona que pase por nuestras puertas. Desde nuestros humildes comienzos, hemos recorrido un emocionante viaje, explorando los rincones más remotos del mundo en busca de los granos más selectos y auténticos.
                 </p>
-                <a href="#">Nuestros Productos</a>
+                <a href="#products">Nuestros Productos</a>
             </div>
         </div>
     </section>

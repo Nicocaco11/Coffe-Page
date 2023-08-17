@@ -1,5 +1,4 @@
 @use "animation";
-@use "responsive";
 @use "login";
 @use "register";
 
@@ -44,13 +43,12 @@ p{
 
 // NAVBAR
 
-.navbar{
+#navbar{
     width: 100%;
     height: 10vh;
     background-color: rgba(black, 0.5);
     display: flex;
     margin: auto;
-    overflow: hidden;
     position: fixed;
     top: 0;
 
@@ -59,12 +57,21 @@ p{
         margin: auto;
     }
 
-    #navbar__link{
+    .navbar__link{
         font-size: 2rem;
         margin: auto;
         display: flex;
         gap: 30%;
     }
+}
+
+
+#navbar__checkbox{
+    display: none;
+}
+
+.navbar_checked{
+    display: none;
 }
 
 // HERO
@@ -195,6 +202,7 @@ h2{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 
     img{
         width: 25vw;
@@ -207,17 +215,11 @@ h2{
 
     h1{
         font-size: 3rem;
-        color: black;
-    }
-
-    p{
-        color: black;
     }
 
     a{
         padding-inline: 0.5rem;
         font-size: 2rem;
-        color: black;
         border: solid rgb(213, 157, 84);
         border-radius: 20px;
         -webkit-border-radius: 20px;
@@ -233,10 +235,6 @@ h2{
     width: 50vw;
     height: 25vw;
     gap: 5rem;
-    box-shadow: 1px 0px 41px 10px rgba(0,0,0,0.63);
-    -webkit-box-shadow: 1px 0px 41px 10px rgba(0,0,0,0.63);
-    -moz-box-shadow: 1px 0px 41px 10px rgba(0,0,0,0.63);
-    background-color: aliceblue;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -299,4 +297,105 @@ h2{
 
 #enviar{
     color: black;
+}
+
+// SECCIÓN RESPONSIVE
+
+@media (max-width: 992px){
+
+//NAVBAR
+
+#navbar{
+        
+        .navbar__link{
+            background: rgba(black, 0.6);
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 80px;
+            display: none;
+        }
+
+    }
+
+.navbar_checked{
+        display: block;
+        margin: auto;
+    }
+
+#navbar__checkbox:checked ~ .navbar__link--delete{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+
+        li{
+            height: 50px;
+            position: sticky;
+            display: none;
+            background-color: rgba(black, 0);
+        }
+    }
+
+    #navbar__checkbox:checked ~ .navbar__link{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+
+        li{
+            height: 50px;
+            position: sticky;
+            display: flex;
+            background-color: rgba(black, 0);
+        }
+    }
+
+//HERO
+
+#hero{
+
+        img{
+            display: none;
+        }
+
+    }
+
+//PRODUCTS
+
+#products{
+        flex-wrap: wrap;
+    }
+
+
+//ABOUTS US
+
+#about{
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+}
+
+@media (max-width: 576px){
+#hero{
+
+#hero__button{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+#contact{
+    height: 100vh;
+    .contact__row{
+        flex-wrap: wrap;
+    }
+}
 }

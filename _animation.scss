@@ -8,7 +8,7 @@
     }
 }
 
-.navbar__link:hover{
+.navbar__link li:hover{
     animation-name: buttonhover;
     animation-duration: 1s;
     color: var(--button-color);
